@@ -1,0 +1,20 @@
+.container-section {
+  max-width: 1440px;
+  margin: auto;
+  padding-inline: 24px;
+}
+
+.section-padding {
+  padding-block: 100px;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #f97316,
+    #ea580c
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
