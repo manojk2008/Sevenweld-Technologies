@@ -13,6 +13,8 @@ import {
   ImageIcon,
 } from "lucide-react";
 
+import Container from "@/layouts/Container";
+
 export default function AboutPage() {
   return (
     <main className="bg-[#08111F] text-white">
@@ -25,7 +27,7 @@ export default function AboutPage() {
 
         <div className="absolute right-[-250px] top-20 h-[500px] w-[500px] rounded-full bg-cyan-500/10 blur-[180px]" />
 
-        <div className="mx-auto max-w-[1700px] px-8 py-20">
+        <Container className="py-20">
 
           <div className="grid items-center gap-10 lg:grid-cols-2">
 
@@ -66,13 +68,13 @@ export default function AboutPage() {
 
           </div>
 
-        </div>
+        </Container>
 
       </section>
 
       {/* Stats */}
 
-      <section className="mx-auto max-w-[1700px] px-8 py-14">
+      <Container as="section" className="py-14">
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
 
@@ -102,11 +104,11 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* Company */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-16">
+      <Container as="section" className="pb-16">
 
         <div className="grid items-center gap-10 lg:grid-cols-2">
 
@@ -139,11 +141,11 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* Mission / Values */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-16">
+      <Container as="section" className="pb-16">
 
         <div className="mx-auto max-w-3xl text-center">
 
@@ -190,11 +192,11 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* Timeline / History */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-16">
+      <Container as="section" className="pb-16">
 
         <div className="mx-auto max-w-3xl text-center">
 
@@ -236,11 +238,11 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* Team */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-16">
+      <Container as="section" className="pb-16">
 
         <div className="mx-auto max-w-3xl text-center">
 
@@ -283,11 +285,11 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* CTA */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-20">
+      <Container as="section" className="pb-20">
 
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-[#111C31] to-[#16233A] p-6">
 
@@ -318,7 +320,7 @@ export default function AboutPage() {
 
         </div>
 
-      </section>
+      </Container>
 
     </main>
   );

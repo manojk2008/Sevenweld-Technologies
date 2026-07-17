@@ -132,8 +132,6 @@ export default function DesktopMenu() {
 
         <NavItem href="/services" label="Services" />
 
-        <NavItem href="/downloads" label="Downloads" />
-
         <NavItem href="/contact" label="Contact" />
 
         <NavigationMenu.Indicator className="top-full z-[1] flex h-3 items-end justify-center overflow-hidden">

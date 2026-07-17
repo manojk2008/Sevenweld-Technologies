@@ -173,13 +173,10 @@ export const products: Product[] = [
 
   badge: "Industrial",
 
-  thumbnail: "/images/products/arcw315.png",
+  thumbnail: "/images/products/mig/mig1.png",
 
   gallery: [
-    "/images/products/arcw315.png",
-    "/images/products/arcw315.png",
-    "/images/products/arcw315.png",
-    "/images/products/arcw315.png",
+    "/images/products/mig/mig1.png",
   ],
 
   brochure: "/brochures/arc315.pdf",
@@ -222,13 +219,13 @@ export const products: Product[] = [
 
   badge: "New",
 
-  thumbnail: "/images/products/laserwelding.png",
+  thumbnail: "/images/products/laser/laserwelding.png",
 
   gallery: [
-    "/images/products/laserwelding.png",
-    "/images/products/laserwelding.png",
-    "/images/products/laserwelding.png",
-    "/images/products/laserwelding.png",
+    "/images/products/laser/laserwelding1.png",
+    "/images/products/laser/laserwelding2.png",
+    "/images/products/laser/laserwelding3.png",
+    "/images/products/laser/laserwelding4.png",
   ],
 
   brochure: "/brochures/laser.pdf",
@@ -271,13 +268,13 @@ export const products: Product[] = [
 
   badge: "Industrial",
 
-  thumbnail: "/images/products/acdc.png",
+  thumbnail: "/images/products/acdc/acdc.png",
 
   gallery: [
-    "/images/products/acdc.png",
-    "/images/products/acdc.png",
-    "/images/products/acdc.png",
-    "/images/products/acdc.png",
+    "/images/products/acdc/acdc1.png",
+    "/images/products/acdc/acdc2.png",
+    "/images/products/acdc/acdc3.png",
+    "/images/products/acdc/acdc4.png",
   ],
 
   brochure: "/brochures/acdc630.pdf",
@@ -320,13 +317,13 @@ export const products: Product[] = [
 
   badge: "Essential",
 
-  thumbnail: "/images/products/arcq4.png",
+  thumbnail: "/images/products/arcq4/arcq4.png",
 
   gallery: [
-    "/images/products/arcq4.png",
-    "/images/products/arcq4.png",
-    "/images/products/arcq4.png",
-    "/images/products/arcq4.png",
+    "/images/products/arcq4/arcq4-1.png",
+    "/images/products/arcq4/arcq4-2.png",
+    "/images/products/arcq4/arcq4-3.png",
+    "/images/products/arcq4/arcq4-4.png",
   ],
 
   brochure: "/brochures/arc400.pdf",
@@ -352,4 +349,4 @@ export const products: Product[] = [
 
   featured: false,
 },
-];
+]

@@ -6,6 +6,7 @@ import Logo from "./Logo";
 import DesktopMenu from "./DesktopMenu";
 import CTAButtons from "./CTAButtons";
 import MobileMenu from "./MobileMenu";
+import Container from "@/layouts/Container";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-18 max-w-[1440px] items-center justify-between px-8">
+      <Container
+        as="nav"
+        className="flex h-18 items-center justify-between"
+      >
 
         <Logo />
 
@@ -41,7 +45,7 @@ export default function Navbar() {
           <MobileMenu />
         </div>
 
-      </div>
+      </Container>
     </header>
   );
 }

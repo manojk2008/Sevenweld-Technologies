@@ -32,7 +32,7 @@ export default function ProductGallery({
           width={1400}
           height={1100}
           priority
-          className="max-h-full w-auto object-contain transition duration-700 group-hover:scale-[1.04]"
+          className="max-h-full w-full object-contain transition duration-700 group-hover:scale-[1.04]"
         />
 
         <div className="absolute left-4 top-4 rounded-full bg-black/40 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.15em] text-white backdrop-blur-xl">

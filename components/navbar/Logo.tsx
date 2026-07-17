@@ -17,7 +17,7 @@ export default function Logo() {
           width={42}
           height={42}
           priority
-          className="object-contain"
+          className="h-[38px] w-[140px]"
         />
       </div>
 

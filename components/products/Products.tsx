@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { products } from "@/data/products";
 import ProductCard from "./ProductCard";
 import ProductTabs from "./ProductTabs";
+import Container from "@/layouts/Container";
 
 export default function Products() {
   const [activeCategory, setActiveCategory] =
@@ -23,7 +24,7 @@ export default function Products() {
 
   return (
     <section className="bg-[#08111F] py-20">
-      <div className="mx-auto max-w-[1280px] px-6">
+      <Container>
 
         {/* Header */}
 
@@ -73,7 +74,7 @@ export default function Products() {
           </motion.div>
         </AnimatePresence>
 
-      </div>
+      </Container>
     </section>
   );
 }

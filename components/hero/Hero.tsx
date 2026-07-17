@@ -2,6 +2,7 @@
 
 import HeroContent from "./HeroContent";
 import HeroImage from "./HeroImage";
+import Container from "@/layouts/Container";
 
 export default function Hero() {
   return (
@@ -24,7 +25,7 @@ export default function Hero() {
 
       <div className="absolute left-[-180px] top-20 h-[450px] w-[450px] rounded-full bg-blue-600/10 blur-[180px]" />
 
-      <div className="relative mx-auto max-w-[1440px] px-8">
+      <Container className="relative">
 
         <div className="grid min-h-[88vh] items-center gap-16 lg:grid-cols-[1fr_1.1fr]">
 
@@ -34,7 +35,7 @@ export default function Hero() {
 
         </div>
 
-      </div>
+      </Container>
 
     </section>
   );

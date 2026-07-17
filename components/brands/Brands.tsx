@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brand } from "@/types/brand";
 import { brands } from "@/data/brands";
 import BrandMarquee from "./BrandMarquee";
+import Container from "@/layouts/Container";
 
 export default function Brands() {
   return (
@@ -23,7 +23,7 @@ export default function Brands() {
         />
       </div>
 
-      <div className="relative mx-auto max-w-[1500px] px-8">
+      <Container className="relative">
 
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -54,7 +54,7 @@ export default function Brands() {
         <div className="mt-8">
           <BrandMarquee brands={brands} />
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

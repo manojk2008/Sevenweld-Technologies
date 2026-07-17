@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Factory, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 import { industries } from "@/data/industries";
 import IndustryCard from "./IndustryCard";
@@ -94,11 +95,13 @@ export default function Industries() {
 
             </div>
 
-            <button className="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
+            <Link
+              href="/contact"
+              className="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+            >
               Talk to an Expert
-
               <ArrowRight className="h-4 w-4" />
-            </button>
+            </Link>
 
           </div>
         </motion.div>

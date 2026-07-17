@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Car,
@@ -7,8 +8,9 @@ import {
   Building2,
   Ship,
   Cog,
-  ImageIcon,
 } from "lucide-react";
+
+import Container from "@/layouts/Container";
 
 const industries = [
   {
@@ -61,7 +63,7 @@ export default function IndustriesPage() {
 
         <div className="absolute right-[-250px] top-20 h-[500px] w-[500px] rounded-full bg-orange-500/10 blur-[180px]" />
 
-        <div className="relative mx-auto max-w-[1700px] px-8 py-20 text-center">
+        <Container className="relative py-20 text-center">
 
           <span className="rounded-full border border-blue-500/20 bg-blue-600/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-blue-400">
             Industries We Serve
@@ -81,19 +83,18 @@ export default function IndustriesPage() {
             power manufacturers across India.
           </p>
 
-        </div>
+        </Container>
 
       </section>
 
       {/* Industry Grid */}
 
-      <section className="mx-auto max-w-[1700px] px-8 py-14">
+      <Container as="section" className="py-14">
 
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 
           {industries.map((industry) => {
             const Icon = industry.icon;
-
             return (
               <div
                 key={industry.title}
@@ -118,16 +119,21 @@ export default function IndustriesPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* Featured Case / Image */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-16">
+      <Container as="section" className="pb-16">
 
         <div className="grid items-center gap-10 lg:grid-cols-2">
 
-          <div className="flex aspect-[16/11] w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[#111C31] to-[#16233A]">
-            <ImageIcon className="h-10 w-10 text-slate-600" />
+          <div className="relative aspect-[16/11] w-full overflow-hidden rounded-2xl border border-white/10">
+            <Image
+              src="/images/industries/robotic-welding.png"
+              alt="SevenWeld robotic welding automation in an industrial production line"
+              fill
+              className="object-cover"
+            />
           </div>
 
           <div>
@@ -158,11 +164,11 @@ export default function IndustriesPage() {
 
         </div>
 
-      </section>
+      </Container>
 
       {/* CTA */}
 
-      <section className="mx-auto max-w-[1700px] px-8 pb-20">
+      <Container as="section" className="pb-20">
 
         <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-[#111C31] to-[#16233A] p-6">
 
@@ -193,7 +199,7 @@ export default function IndustriesPage() {
 
         </div>
 
-      </section>
+      </Container>
 
     </main>
   );

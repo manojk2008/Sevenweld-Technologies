@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import { getProduct } from "@/lib/getProduct";
 
+import Container from "@/layouts/Container";
+
 import ProductBreadcrumb from "@/components/products/ProductBreadcrumb";
 import ProductGallery from "@/components/products/ProductGallery";
 import ProductInfo from "@/components/products/ProductInfo";
@@ -58,34 +60,34 @@ export default async function ProductPage({
 
       {/* Background */}
 
-      <div className="absolute left-[-250px] top-20 h-[650px] w-[650px] rounded-full bg-blue-600/10 blur-[220px]" />
+      <div className="absolute left-[-250px] top-20 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-[180px]" />
 
-      <div className="absolute right-[-250px] top-[500px] h-[650px] w-[650px] rounded-full bg-cyan-500/10 blur-[220px]" />
+      <div className="absolute right-[-250px] top-[400px] h-[500px] w-[500px] rounded-full bg-cyan-500/10 blur-[180px]" />
 
-      <div className="absolute bottom-[-250px] left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-orange-500/10 blur-[220px]" />
+      <div className="absolute bottom-[-250px] left-1/2 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-orange-500/10 blur-[180px]" />
 
       {/* Hero */}
 
       <section className="relative border-b border-white/10">
 
-        <div className="mx-auto max-w-[1700px] px-8 pt-36 pb-28">
+        <Container className="pt-24 pb-16">
 
           <ProductBreadcrumb
             category={product.category}
             productName={product.name}
           />
 
-          <div className="mt-12 grid items-start gap-24 xl:grid-cols-[1.35fr_.65fr]">
+          <div className="mt-8 grid items-start gap-10 xl:grid-cols-[1.35fr_.65fr]">
 
             <ProductGallery product={product} />
 
-            <div className="sticky top-28">
+            <div className="sticky top-24">
               <ProductInfo product={product} />
             </div>
 
           </div>
 
-        </div>
+        </Container>
 
       </section>
 
@@ -93,19 +95,19 @@ export default async function ProductPage({
 
       <section className="relative">
 
-        <div className="mx-auto max-w-[1700px] px-8 py-28">
+        <Container className="py-16">
 
           <ProductSpecifications product={product} />
 
-          <div className="mt-36">
+          <div className="mt-16">
             <ProductFeatures product={product} />
           </div>
 
-          <div className="mt-36">
+          <div className="mt-16">
             <ProductDownloads product={product} />
           </div>
 
-        </div>
+        </Container>
 
       </section>
 

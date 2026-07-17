@@ -2,19 +2,20 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 import { features } from "@/data/features";
 import FeatureCard from "./FeatureCard";
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden bg-[#08111F] py-36">
+    <section className="relative overflow-hidden bg-[#08111F] py-20">
 
       {/* Background */}
 
-      <div className="absolute left-[-250px] top-20 h-[700px] w-[700px] rounded-full bg-blue-600/10 blur-[220px]" />
+      <div className="absolute left-[-250px] top-20 h-[500px] w-[500px] rounded-full bg-blue-600/10 blur-[180px]" />
 
-      <div className="absolute right-[-250px] bottom-0 h-[700px] w-[700px] rounded-full bg-cyan-500/10 blur-[220px]" />
+      <div className="absolute right-[-250px] bottom-0 h-[500px] w-[500px] rounded-full bg-cyan-500/10 blur-[180px]" />
 
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -62,7 +63,7 @@ export default function WhyChooseUs() {
 
         {/* Cards */}
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
 
           {features.map((feature, index) => (
             <FeatureCard
@@ -78,11 +79,11 @@ export default function WhyChooseUs() {
 
         {/* CTA */}
 
-       <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-14 rounded-2xl border border-white/10 bg-[#111C31] p-6"
+          className="mt-10 rounded-2xl border border-white/10 bg-[#111C31] p-6"
         >
 
           <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
@@ -100,13 +101,13 @@ export default function WhyChooseUs() {
 
             </div>
 
-            <button className="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700">
-
+            <Link
+              href="/contact"
+              className="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+            >
               Request Quote
-
               <ArrowRight className="h-4 w-4" />
-
-            </button>
+            </Link>
 
           </div>
 

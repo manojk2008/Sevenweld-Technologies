@@ -1,12 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import {
   Phone,
   Mail,
   MapPin,
-  ArrowUpRight,
 } from "lucide-react";
 
 import FooterColumn from "./FooterColumn";
@@ -42,38 +40,6 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-[1700px] px-8 py-16">
 
-        {/* CTA */}
-
-        {/* <div className="mb-14 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-[#111C31] to-[#16233A] p-6">
-
-          <div className="flex flex-col items-center justify-between gap-5 lg:flex-row">
-
-            <div>
-
-              <h2 className="text-2xl font-black text-white md:text-3xl">
-                Ready to Modernize Your Production?
-              </h2>
-
-              <p className="mt-2 max-w-3xl text-base leading-7 text-slate-300">
-                Speak with our experts and discover the right welding,
-                robotic automation or laser solution for your business.
-              </p>
-
-            </div>
-
-            <Link
-              href="/contact"
-              className="flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
-            >
-              Request Quote
-
-              <ArrowUpRight className="h-4 w-4" />
-            </Link>
-
-          </div>
-
-        </div> */}
-
         {/* Footer */}
 
         <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
@@ -82,9 +48,11 @@ export default function Footer() {
 
             <Image
               src="/logos/logo.png"
-              alt="SevenWeld"
-              width={140}
-              height={38}
+              alt="SevenWeld Technologies"
+              width={42}
+              height={42}
+              priority
+              className="h-[42px] w-[42px] object-contain"
             />
 
             <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">

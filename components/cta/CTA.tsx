@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
+import Container from "@/layouts/Container";
 
 export default function CTA() {
   return (
@@ -25,7 +26,7 @@ export default function CTA() {
 
       <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/15 blur-[180px]" />
 
-      <div className="relative mx-auto max-w-[1500px] px-8">
+      <Container className="relative">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -75,7 +76,7 @@ export default function CTA() {
 
         </motion.div>
 
-      </div>
+      </Container>
     </section>
   );
 }

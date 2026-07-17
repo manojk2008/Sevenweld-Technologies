@@ -32,14 +32,14 @@ export default function ProductCard({
       >
         {/* Image */}
 
-        <div className="flex h-[190px] items-center justify-center overflow-hidden border-b border-slate-800 bg-white p-6">
+        <div className="flex h-[300px] items-center justify-center overflow-hidden border-b border-slate-800 bg-white p-4">
 
           <Image
             src={product.thumbnail}
             alt={product.name}
             width={500}
             height={350}
-            className="max-h-full w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            className="max-h-full w-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
 
         </div>
